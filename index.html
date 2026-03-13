@@ -21,6 +21,16 @@
 
 *{box-sizing:border-box;margin:0;padding:0;font-family:Inter,Arial,Helvetica,sans-serif}
 
+@keyframes fadeUp{
+0%{opacity:0;transform:translateY(20px)}
+100%{opacity:1;transform:translateY(0)}
+}
+
+@keyframes floatCTA{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-6px)}
+}
+
 body{background:var(--bg);color:#1a1a1a;line-height:1.6;-webkit-font-smoothing:antialiased}
 
 header{
@@ -51,6 +61,8 @@ color:white
 .hero p{font-size:18px;max-width:680px;margin:auto;margin-bottom:35px}
 
 .cta{
+animation:floatCTA 3s ease-in-out infinite;
+
 background:white;
 color:var(--blue-dark);
 padding:16px 32px;
@@ -73,7 +85,9 @@ section{padding:80px 20px;max-width:1150px;margin:auto}
 
 .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
 
-.service{background:white;padding:32px 26px;border-radius:18px;box-shadow:0 15px 40px rgba(0,0,0,0.08);transition:0.25s;text-align:center}
+.service{
+animation:fadeUp 0.8s ease both;
+background:white;padding:32px 26px;border-radius:18px;box-shadow:0 15px 40px rgba(0,0,0,0.08);transition:0.25s;text-align:center}
 
 .icon{font-size:36px;margin-bottom:14px}
 
@@ -83,11 +97,15 @@ section{padding:80px 20px;max-width:1150px;margin:auto}
 
 .why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
 
-.why-card{background:white;padding:26px;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,0.07);text-align:center}
+.why-card{
+animation:fadeUp 0.9s ease both;
+background:white;padding:26px;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,0.07);text-align:center}
 
 .how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:30px}
 
-.step{background:white;padding:24px;border-radius:14px;box-shadow:0 10px 25px rgba(0,0,0,0.07);font-weight:500;text-align:center}
+.step{
+animation:fadeUp 1s ease both;
+background:white;padding:24px;border-radius:14px;box-shadow:0 10px 25px rgba(0,0,0,0.07);font-weight:500;text-align:center}
 
 .step .icon{font-size:30px;margin-bottom:8px}
 
@@ -100,16 +118,16 @@ section{padding:80px 20px;max-width:1150px;margin:auto}
 .map{position:relative}
 .map img{width:100%;display:block}
 .map-badge{
-position:absolute;
-bottom:18px;
-left:18px;
+margin:20px auto 25px;
 background:#0d4ea6;
 color:white;
-padding:10px 14px;
+padding:12px 20px;
 border-radius:30px;
-font-size:13px;
+font-size:14px;
 font-weight:600;
-box-shadow:0 6px 16px rgba(0,0,0,0.2)
+width:max-content;
+box-shadow:0 6px 16px rgba(0,0,0,0.2);
+text-align:center
 }
 .map-label{
 position:absolute;
@@ -163,6 +181,8 @@ text-decoration:none
 }
 
 @media (max-width:768px){
+header div{gap:6px !important}
+
 .whatsapp-float{display:none}
 
 
@@ -315,10 +335,6 @@ Crew Post provides a simple and reliable crew delivery service in Livorno for cr
 <h2 class="section-title">Crew Shuttle Arrival in Livorno</h2>
 <p class="section-sub">Most cruise ship crew arrive here with the port shuttle.</p>
 
-<div class="map">
-<img src="mappa Crew Post.png" alt="Crew shuttle arrival Piazza del Municipio Livorno map" />
-</div>
-<div class="map-badge">⏱ 2 min walk to Crew Post pickup</div>
 </div>
 </section>
 
@@ -365,9 +381,6 @@ Contact: crewpostdelivery@gmail.com
 Message Us on WhatsApp and receive your shipping address
 </a>
 </div>
-
-</body>
-</html>
 
 </body>
 </html>
