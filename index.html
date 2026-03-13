@@ -1,519 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crew Post | Crew Delivery ******* for ****** Ship Crew Packages</title>
-    <meta name="description" content="Crew Post provides fast and reliable crew delivery in Livorno for cruise ship crew members. Receive Amazon, Shein, Temu and online orders while docking in port.">
-    <meta name="keywords" content="crew delivery Livorno, cruise crew packages, crew mail Livorno, cruise crew mail service, crew packages port Livorno, MSC crew packages, Royal Caribbean crew mail">
-    <link rel="icon" type="image/png" href="crew-post-favicon.png">
-    <link rel="apple-touch-icon" href="crew-post-favicon.png">
-    <style>
-        :root {
-            --blue-dark: #0d4ea6;
-            --blue: #1673c7;
-            --blue-light: #2fa4e7;
-            --bg: #f4f8fc;
-        }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crew Post | Crew Delivery Livorno for Cruise Ship Crew Packages</title>
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Inter, Arial, Helvetica, sans-serif
-        }
+<meta name="description" content="Crew Post provides fast and reliable crew delivery in Livorno for cruise ship crew members. Receive Amazon, Shein, Temu and online orders while docking in port." />
+<meta name="keywords" content="crew delivery Livorno, cruise crew packages, crew mail Livorno, cruise crew mail service, crew packages port Livorno, MSC crew packages, Royal Caribbean crew mail" />
 
-        body {
-            background: var(--bg);
-            color: #1a1a1a;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased
-        }
+<link rel="icon" type="image/png" href="crew-post-favicon.png" />
+<link rel="apple-touch-icon" href="crew-post-favicon.png" />
 
-        header {
-            background: white;
-            padding: 12px 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-            position: sticky;
-            top: 0;
-            z-index: 10
-        }
+<style>
+:root{
+--blue-dark:#0d4ea6;
+--blue:#1673c7;
+--blue-light:#2fa4e7;
+--bg:#f4f8fc;
+}
 
-        .logo {
-            height: 60px;
-            max-width: 90%
-        }
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,Arial,Helvetica,sans-serif}
 
-        .hero {
-            padding: 90px 20px 80px;
-            text-align: center;
-            background: linear-gradient(135deg, var(--blue-dark), var(--blue-light));
-            color: white
-        }
+body{background:var(--bg);color:#1a1a1a;line-height:1.6;-webkit-font-smoothing:antialiased}
 
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 14px;
-            line-height: 1.2
-        }
+header{
+background:white;
+padding:12px 20px;
+display:flex;
+justify-content:center;
+align-items:center;
+box-shadow:0 4px 20px rgba(0,0,0,0.06);
+position:sticky;
+top:0;
+z-index:10
+}
 
-        .slogan {
-            font-size: 20px;
-            opacity: 0.95;
-            margin-bottom: 20px
-        }
+.logo{height:60px;max-width:90%}
 
-        .hero p {
-            font-size: 18px;
-            max-width: 680px;
-            margin: auto;
-            margin-bottom: 35px
-        }
+.hero{
+padding:90px 20px 80px;
+text-align:center;
+background:linear-gradient(135deg,var(--blue-dark),var(--blue-light));
+color:white
+}
 
-        .cta {
-            background: white;
-            color: var(--blue-dark);
-            padding: 16px 32px;
-            border-radius: 40px;
-            font-weight: bold;
-            text-decoration: none;
-            display: inline-block;
-            transition: 0.3s;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-            font-size: 16px
-        }
+.hero h1{font-size:42px;margin-bottom:14px;line-height:1.2}
 
-        .cta:hover {
-            transform: translateY(-3px)
-        }
+.slogan{font-size:20px;opacity:0.95;margin-bottom:20px}
 
-        section {
-            padding: 80px 20px;
-            max-width: 1150px;
-            margin: auto
-        }
+.hero p{font-size:18px;max-width:680px;margin:auto;margin-bottom:35px}
 
-        .section-title {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 15px
-        }
+.cta{
+background:white;
+color:var(--blue-dark);
+padding:16px 32px;
+border-radius:40px;
+font-weight:bold;
+text-decoration:none;
+display:inline-block;
+transition:0.3s;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+font-size:16px
+}
 
-        .section-sub {
-            text-align: center;
-            color: #555;
-            max-width: 650px;
-            margin: auto;
-            margin-bottom: 40px;
-            font-size: 16px
-        }
+.cta:hover{transform:translateY(-3px)}
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 26px
-        }
+section{padding:80px 20px;max-width:1150px;margin:auto}
 
-        .service {
-            background: white;
-            padding: 32px 26px;
-            border-radius: 18px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-            transition: 0.25s;
-            text-align: center
-        }
+.section-title{text-align:center;font-size:32px;margin-bottom:15px}
 
-        .icon {
-            font-size: 36px;
-            margin-bottom: 14px
-        }
+.section-sub{text-align:center;color:#555;max-width:650px;margin:auto;margin-bottom:40px;font-size:16px}
 
-        .service:hover {
-            transform: translateY(-6px)
-        }
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
 
-        .service h3 {
-            color: var(--blue-dark);
-            margin-bottom: 10px
-        }
+.service{background:white;padding:32px 26px;border-radius:18px;box-shadow:0 15px 40px rgba(0,0,0,0.08);transition:0.25s;text-align:center}
 
-        .why {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 22px
-        }
+.icon{font-size:36px;margin-bottom:14px}
 
-        .why-card {
-            background: white;
-            padding: 26px;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
-            text-align: center
-        }
+.service:hover{transform:translateY(-6px)}
 
-        .how {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 22px;
-            margin-top: 30px
-        }
+.service h3{color:var(--blue-dark);margin-bottom:10px}
 
-        .step {
-            background: white;
-            padding: 24px;
-            border-radius: 14px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
-            font-weight: 500;
-            text-align: center
-        }
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
 
-        .step .icon {
-            font-size: 30px;
-            margin-bottom: 8px
-        }
+.why-card{background:white;padding:26px;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,0.07);text-align:center}
 
-        .companies {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 12px;
-            margin-top: 30px
-        }
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:30px}
 
-        .company {
-            background: white;
-            padding: 12px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            text-align: center;
-            font-weight: 600;
-            font-size: 13px
-        }
+.step{background:white;padding:24px;border-radius:14px;box-shadow:0 10px 25px rgba(0,0,0,0.07);font-weight:500;text-align:center}
 
-        .map {
-            margin-top: 35px;
-            border-radius: 14px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1)
-        }
+.step .icon{font-size:30px;margin-bottom:8px}
 
-        .map {
-            position: relative
-        }
+.companies{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:30px}
 
-        .map img {
-            width: 100%;
-            display: block
-        }
+.company{background:white;padding:12px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.08);text-align:center;font-weight:600;font-size:13px}
 
-        .map-badge {
-            position: absolute;
-            bottom: 18px;
-            left: 18px;
-            background: #0d4ea6;
-            color: white;
-            padding: 10px 14px;
-            border-radius: 30px;
-            font-size: 13px;
-            font-weight: 600;
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2)
-        }
+.map{margin-top:35px;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.1)}
 
-        .map-label {
-            position: absolute;
-            top: 18px;
-            left: 18px;
-            background: white;
-            color: #0d4ea6;
-            padding: 10px 14px;
-            border-radius: 10px;
-            font-size: 13px;
-            font-weight: 700;
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15)
-        }
+.map{position:relative}
+.map img{width:100%;display:block}
+.map-badge{
+position:absolute;
+bottom:18px;
+left:18px;
+background:#0d4ea6;
+color:white;
+padding:10px 14px;
+border-radius:30px;
+font-size:13px;
+font-weight:600;
+box-shadow:0 6px 16px rgba(0,0,0,0.2)
+}
+.map-label{
+position:absolute;
+top:18px;
+left:18px;
+background:white;
+color:#0d4ea6;
+padding:10px 14px;
+border-radius:10px;
+font-size:13px;
+font-weight:700;
+box-shadow:0 6px 16px rgba(0,0,0,0.15)
+}
 
-        .store-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 16px;
-            margin-top: 30px
-        }
+.store-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin-top:30px}
 
-        .store {
-            background: white;
-            padding: 18px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-            text-align: center;
-            font-weight: 600
-        }
+.store{background:white;padding:18px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.08);text-align:center;font-weight:600}
 
-        .whatsapp {
-            text-align: center
-        }
+.whatsapp{text-align:center}
 
-        .qr {
-            width: 180px;
-            max-width: 70%;
-            margin: 25px auto
-        }
+.qr{width:180px;max-width:70%;margin:25px auto}
 
-        .steps {
-            margin-top: 18px;
-            font-size: 16px
-        }
+.steps{margin-top:18px;font-size:16px}
 
-        footer {
-            background: #0d4ea6;
-            color: white;
-            text-align: center;
-            padding: 28px 20px;
-            margin-top: 60px;
-            font-size: 14px
-        }
+footer{background:#0d4ea6;color:white;text-align:center;padding:28px 20px;margin-top:60px;font-size:14px}
 
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 18px;
-            background: #25D366;
-            color: white;
-            font-size: 26px;
-            width: 62px;
-            height: 62px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-            z-index: 1000
-        }
+.whatsapp-float{position:fixed;bottom:20px;right:18px;background:#25D366;color:white;font-size:26px;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,0.25);z-index:1000}
 
-        .mobile-cta {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: white;
-            padding: 12px;
-            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
-            z-index: 999
-        }
+.mobile-cta{
+display:none;
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+background:white;
+padding:12px;
+box-shadow:0 -4px 20px rgba(0,0,0,0.1);
+z-index:999
+}
 
-        .mobile-cta a {
-            display: block;
-            background: #25D366;
-            color: white;
-            text-align: center;
-            padding: 14px;
-            border-radius: 30px;
-            font-weight: bold;
-            text-decoration: none
-        }
+.mobile-cta a{
+display:block;
+background:#25D366;
+color:white;
+text-align:center;
+padding:14px;
+border-radius:30px;
+font-weight:bold;
+text-decoration:none
+}
 
-        @media (max-width:768px) {
-            .hero {
-                padding: 70px 18px 60px
-            }
+@media (max-width:768px){
 
-            .hero h1 {
-                font-size: 30px
-            }
+.hero{padding:70px 18px 60px}
+.hero h1{font-size:30px}
+.slogan{font-size:18px}
+.hero p{font-size:16px}
+section{padding:60px 18px}
+.section-title{font-size:26px}
+.services{grid-template-columns:1fr}
+.why{grid-template-columns:1fr}
+.how{grid-template-columns:1fr}
+.companies{grid-template-columns:repeat(2,1fr)}
+.company{font-size:12px}
+.cta{width:100%;max-width:320px}
+.qr{width:160px}
+.mobile-cta{display:block}
 
-            .slogan {
-                font-size: 18px
-            }
+}
+</style>
 
-            .hero p {
-                font-size: 16px
-            }
-
-            section {
-                padding: 60px 18px
-            }
-
-            .section-title {
-                font-size: 26px
-            }
-
-            .services {
-                grid-template-columns: 1fr
-            }
-
-            .why {
-                grid-template-columns: 1fr
-            }
-
-            .how {
-                grid-template-columns: 1fr
-            }
-
-            .companies {
-                grid-template-columns: repeat(2, 1fr)
-            }
-
-            .company {
-                font-size: 12px
-            }
-
-            .cta {
-                width: 100%;
-                max-width: 320px
-            }
-
-            .qr {
-                width: 160px
-            }
-
-            .mobile-cta {
-                display: block
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <header><img src="crew%20post%20ita%20logo.jpeg" class="logo" alt="Crew Post crew delivery Livorno logo" style="margin: 0 auto 0 0; display: block; "></header>
-    <section class="hero">
-        <h1>Crew Package ******** for Cruise Crew in Livorno</h1>
-        <div class="slogan">Everything Crew Needs, ********* in Port</div>
-        <p>Crew **** ******** a simple and reliable **** delivery service in Livorno for ****** **** crew members. Receive your online ****** and personal packages while your ship ***** in port.</p><a class="cta" href="#whatsapp">***** ********* Your Packages</a>
-    </section>
-    <section>
-        <h2 class="section-title">**** ******* Services</h2>
-        <p class="section-sub">Send packages from Amazon, Shein, Temu or any online store and ******* **** easily when your cruise ship ***** in Livorno.</p>
-        <div class="services">
-            <div class="service">
-                <div class="icon">📦</div>
-                <h3>Crew Package Reception</h3>
-                <p>** ******* your packages in ******* while you *** sailing.</p>
-            </div>
-            <div class="service">
-                <div class="icon">🚚</div>
-                <h3>Fast ****** Coordination</h3>
-                <p>** notify you when your mail ******* so you *** pick it up when your ship docks.</p>
-            </div>
-            <div class="service">
-                <div class="icon">💬</div>
-                <h3>WhatsApp Crew Support</h3>
-                <p>**** your name, **** and nationality and ******* the ******* ******** address.</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2 class="section-title">Why Crew *** Crew Post</h2>
-        <p class="section-sub">Trusted by cruise ship crew members ******** Livorno every week.</p>
-        <div class="why">
-            <div class="why-card">
-                <div class="icon">⚡</div><strong>Fast</strong>
-                <p>Start receiving packages in minutes.</p>
-            </div>
-            <div class="why-card">
-                <div class="icon">🔒</div><strong>Secure</strong>
-                <p>Your mail ** ****** received *** stored.</p>
-            </div>
-            <div class="why-card">
-                <div class="icon">📍</div><strong>Near Shuttle Stop</strong>
-                <p>Easy ****** ***** ******* arrival.</p>
-            </div>
-            <div class="why-card">
-                <div class="icon">🌍</div><strong>International Crew Friendly</strong>
-                <p>Designed for crew members from all countries.</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2 class="section-title">*** ** Works for Crew Members</h2>
-        <p class="section-sub">Start receiving ****** crew ******** in Livorno in just a *** steps.</p>
-        <div class="how">
-            <div class="step">
-                <div class="icon">💬</div><strong>1. Send your Name, Surname, **** and Nationality</strong>
-            </div>
-            <div class="step">
-                <div class="icon">📍</div><strong>2. Receive *** closest ******** address</strong>
-            </div>
-            <div class="step">
-                <div class="icon">📦</div><strong>3. Send your package</strong>
-            </div>
-            <div class="step">
-                <div class="icon">🔔</div><strong>4. ******* delivery notification</strong>
-            </div>
-            <div class="step">
-                <div class="icon">🤝</div><strong>5. Pick ** your package ** Livorno</strong>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2 class="section-title">********* We ***** in Livorno</h2>
-        <p class="section-sub">Crew ******* **** many cruise lines receive their packages **** Crew Post.</p>
-        <div class="companies">
-            <div class="company">***** Caribbean</div>
-            <div class="company">Celebrity Cruises</div>
-            <div class="company">MSC</div>
-            <div class="company">Princess</div>
-            <div class="company">Disney</div>
-            <div class="company">Norwegian</div>
-            <div class="company">Virgin</div>
-            <div class="company">Carnival</div>
-            <div class="company">P&amp;O</div>
-            <div class="company">Cunard</div>
-            <div class="company">AIDA</div>
-            <div class="company">Viking</div>
-            <div class="company">Marella</div>
-            <div class="company">Silversea</div>
-            <div class="company">Ritz‑Carlton</div>
-            <div class="company">MS</div>
-            <div class="company">Azamara</div>
-            <div class="company">Saga</div>
-            <div class="company">Emerald</div>
-            <div class="company">Windstar</div>
-            <div class="company">Scenic</div>
-            <div class="company">***** Seas</div>
-            <div class="company">Ambassador</div>
-            <div class="company">Atlas</div>
-            <div class="company">SeaDream</div>
-            <div class="company">American Queen</div>
-            <div class="company">Crystal</div>
-        </div>
-    </section>
-    <section>
-        <h2 class="section-title">******* Stores Crew Use</h2>
-        <p class="section-sub">Crew members often send packages from these ****** stores.</p>
-        <div class="store-grid">
-            <div class="store">Amazon</div>
-            <div class="store">Shein</div>
-            <div class="store">Temu</div>
-            <div class="store">AliExpress</div>
-            <div class="store">eBay</div>
-        </div>
-    </section>
-    <section>
-        <h2 class="section-title">**** Shuttle Arrival in Livorno</h2>
-        <p class="section-sub">**** ****** **** crew arrive **** **** the port shuttle.</p>
-        <div class="map"><img src="mappa%20Crew%20Post.png" alt="Crew shuttle arrival Piazza del Municipio Livorno map" style="margin: 0 auto 0 0; display: block; ">
-            <div class="map-label">📍 Crew Shuttle Stop<br>****** del Municipio</div>
-            <div class="map-badge">⏱ 2 min walk to Crew Post pickup</div>
-        </div>
-    </section>
-    <section id="whatsapp" class="whatsapp">
-        <h2 class="section-title">Start in 10 Seconds</h2>
-        <p>Scan the QR code or ******* us on WhatsApp.</p><img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/393520913319" alt="Crew Post WhatsApp QR">
-        <p class="steps">Send:<br><br><strong>Name</strong><br><strong>Surname</strong><br><strong>Ship</strong><br><strong>Nationality</strong></p><br><a class="cta" href="https://wa.me/393520913319?text=Hello%20Crew%20Post,%0AName:%0ASurname:%0AShip:%0ANationality:">******* ** on WhatsApp</a>
-    </section>
-    <section style="display:none;">
-        <h2>Cruise Ships *** Cruise Lines ******** Livorno</h2>
-        <p>MSC Cruises, ***** ********* International, ********* Cruises, Norwegian Cruise Line, Princess Cruises, ****** Cruise Line, Carnival Cruise Line, Cunard Line, AIDA Cruises, Viking Ocean Cruises, Azamara, Silversea Cruises, Ritz Carlton Yacht Collection, Marella Cruises, P&amp;O Cruises, Windstar Cruises, Scenic Luxury Cruises, Emerald Cruises, Regent Seven Seas Cruises, SeaDream Yacht Club, Atlas Ocean Voyages, ********** Cruise Line, Saga Cruises, Crystal Cruises. Ships include: MSC Grandiosa, MSC Seaside, MSC Splendida, MSC Meraviglia, ****** ** *** Seas, Oasis of the Seas, Celebrity Beyond, ********* Apex, Norwegian Epic, Norwegian Viva, ****** Dream, *** Princess, Regal Princess, Queen Mary 2, AIDAcosma, ****** Saturn, Silver Spirit, Seven Seas Explorer.</p>
-    </section>
-    <footer>Crew **** &mdash; **** Delivery Livorno | ****** Crew Packages Service<br>Contact: crewpostdelivery@gmail.com</footer>
-    <p><a class="whatsapp-float" href="https://wa.me/393520913319?text=Hello%20Crew%20Post,%0AName:%0ASurname:%0AShip:%0ANationality:">💬</a></p>
-    <div class="mobile-cta"><a href="https://wa.me/393520913319?text=Hello%20Crew%20Post,%0AName:%0ASurname:%0AShip:%0ANationality:">&nbsp;Message Crew Post on WhatsApp&nbsp;</a></div>
 
-<div style="color: red">Prova di Word to HTML - per favore <a href="https://wordtohtml.net/site/payment">Vai al PRO</a> per ottenere l'intero HTML.</div>
+<header>
+<img src="crew post ita logo.jpeg" class="logo" alt="Crew Post crew delivery Livorno logo" />
+</header>
+
+<section class="hero">
+<h1>Crew Package Delivery for Cruise Crew in Livorno</h1>
+<div class="slogan">Everything Crew Needs, Delivered in Port</div>
+<p>
+Crew Post provides a simple and reliable crew delivery service in Livorno for cruise ship crew members. Receive your online orders and personal packages while your ship docks in port.
+</p>
+<a class="cta" href="#whatsapp">Start Receiving Your Packages</a>
+</section>
+
+<section>
+<h2 class="section-title">Crew Mailing Services</h2>
+<p class="section-sub">Send packages from Amazon, Shein, Temu or any online store and receive them easily when your cruise ship docks in Livorno.</p>
+
+<div class="services">
+
+<div class="service">
+<div class="icon">📦</div>
+<h3>Crew Package Reception</h3>
+<p>We receive your packages in Livorno while you are sailing.</p>
+</div>
+
+<div class="service">
+<div class="icon">🚚</div>
+<h3>Fast Pickup Coordination</h3>
+<p>We notify you when your mail arrives so you can pick it up when your ship docks.</p>
+</div>
+
+<div class="service">
+<div class="icon">💬</div>
+<h3>WhatsApp Crew Support</h3>
+<p>Send your name, ship and nationality and receive the closest delivery address.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Why Crew Use Crew Post</h2>
+<p class="section-sub">Trusted by cruise ship crew members visiting Livorno every week.</p>
+
+<div class="why">
+
+<div class="why-card"><div class="icon">⚡</div><b>Fast</b><p>Start receiving packages in minutes.</p></div>
+
+<div class="why-card"><div class="icon">🔒</div><b>Secure</b><p>Your mail is safely received and stored.</p></div>
+
+<div class="why-card"><div class="icon">📍</div><b>Near Shuttle Stop</b><p>Easy pickup after shuttle arrival.</p></div>
+
+<div class="why-card"><div class="icon">🌍</div><b>International Crew Friendly</b><p>Designed for crew members from all countries.</p></div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">How It Works for Crew Members</h2>
+<p class="section-sub">Start receiving cruise crew packages in Livorno in just a few steps.</p>
+
+<div class="how">
+
+<div class="step"><div class="icon">💬</div><b>1. Send your Name, Surname, Ship and Nationality</b></div>
+<div class="step"><div class="icon">📍</div><b>2. Receive the closest shipping address</b></div>
+<div class="step"><div class="icon">📦</div><b>3. Send your package</b></div>
+<div class="step"><div class="icon">🔔</div><b>4. Receive delivery notification</b></div>
+<div class="step"><div class="icon">🤝</div><b>5. Pick up your package in Livorno</b></div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Companies We Serve in Livorno</h2>
+<p class="section-sub">Crew members from many cruise lines receive their packages with Crew Post.</p>
+
+<div class="companies">
+<div class="company">Royal Caribbean</div>
+<div class="company">Celebrity Cruises</div>
+<div class="company">MSC</div>
+<div class="company">Princess</div>
+<div class="company">Disney</div>
+<div class="company">Norwegian</div>
+<div class="company">Virgin</div>
+<div class="company">Carnival</div>
+<div class="company">P&O</div>
+<div class="company">Cunard</div>
+<div class="company">AIDA</div>
+<div class="company">Viking</div>
+<div class="company">Marella</div>
+<div class="company">Silversea</div>
+<div class="company">Ritz‑Carlton</div>
+<div class="company">MS</div>
+<div class="company">Azamara</div>
+<div class="company">Saga</div>
+<div class="company">Emerald</div>
+<div class="company">Windstar</div>
+<div class="company">Scenic</div>
+<div class="company">Seven Seas</div>
+<div class="company">Ambassador</div>
+<div class="company">Atlas</div>
+<div class="company">SeaDream</div>
+<div class="company">American Queen</div>
+<div class="company">Crystal</div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Popular Stores Crew Use</h2>
+<p class="section-sub">Crew members often send packages from these online stores.</p>
+
+<div class="store-grid">
+<div class="store">Amazon</div>
+<div class="store">Shein</div>
+<div class="store">Temu</div>
+<div class="store">AliExpress</div>
+<div class="store">eBay</div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Crew Shuttle Arrival in Livorno</h2>
+<p class="section-sub">Most cruise ship crew arrive here with the port shuttle.</p>
+
+<div class="map">
+<img src="mappa Crew Post.png" alt="Crew shuttle arrival Piazza del Municipio Livorno map" />
+<div class="map-label">📍 Crew Shuttle Stop<br>Piazza del Municipio</div>
+<div class="map-badge">⏱ 2 min walk to Crew Post pickup</div>
+</div>
+</section>
+
+<section id="whatsapp" class="whatsapp">
+
+<h2 class="section-title">Start in 10 Seconds</h2>
+
+<p>Scan the QR code or message us on WhatsApp.</p>
+
+<img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/393520913319" alt="Crew Post WhatsApp QR" />
+
+<p class="steps">
+Send:<br><br>
+<b>Name</b><br>
+<b>Surname</b><br>
+<b>Ship</b><br>
+<b>Nationality</b>
+</p>
+
+<br>
+
+<a class="cta" href="https://wa.me/393520913319?text=Hello%20Crew%20Post,%0AName:%0ASurname:%0AShip:%0ANationality:">Message Us on WhatsApp</a>
+
+</section>
+
+<section style="display:none">
+<h2>Cruise Ships and Cruise Lines Visiting Livorno</h2>
+<p>
+MSC Cruises, Royal Caribbean International, Celebrity Cruises, Norwegian Cruise Line, Princess Cruises, Disney Cruise Line, Carnival Cruise Line, Cunard Line, AIDA Cruises, Viking Ocean Cruises, Azamara, Silversea Cruises, Ritz Carlton Yacht Collection, Marella Cruises, P&O Cruises, Windstar Cruises, Scenic Luxury Cruises, Emerald Cruises, Regent Seven Seas Cruises, SeaDream Yacht Club, Atlas Ocean Voyages, Ambassador Cruise Line, Saga Cruises, Crystal Cruises.
+
+Ships include: MSC Grandiosa, MSC Seaside, MSC Splendida, MSC Meraviglia, Wonder of the Seas, Oasis of the Seas, Celebrity Beyond, Celebrity Apex, Norwegian Epic, Norwegian Viva, Disney Dream, Sky Princess, Regal Princess, Queen Mary 2, AIDAcosma, Viking Saturn, Silver Spirit, Seven Seas Explorer.
+</p>
+</section>
+
+<footer>
+Crew Post — Crew Delivery Livorno | Cruise Crew Packages Service<br>
+Contact: crewpostdelivery@gmail.com
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/393520913319?text=Hello%20Crew%20Post,%0AName:%0ASurname:%0AShip:%0ANationality:">💬</a>
+
+<div class="mobile-cta">
+<a href="https://wa.me/393520913319?text=Hello%20Crew%20Post,%0AName:%0ASurname:%0AShip:%0ANationality:">
+Message Crew Post on WhatsApp
+</a>
+</div>
+
 </body>
-
 </html>
