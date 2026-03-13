@@ -139,6 +139,7 @@ footer{background:#0d4ea6;color:white;text-align:center;padding:28px 20px;margin
 .whatsapp-float{position:fixed;bottom:20px;right:18px;background:#25D366;color:white;font-size:26px;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,0.25);z-index:1000}
 
 .mobile-cta{
+
 display:none;
 position:fixed;
 bottom:0;
@@ -162,6 +163,8 @@ text-decoration:none
 }
 
 @media (max-width:768px){
+.whatsapp-float{display:none}
+
 
 .hero{padding:70px 18px 60px}
 .hero h1{font-size:30px}
@@ -186,12 +189,15 @@ section{padding:60px 18px}
 <body>
 
 <header>
+<div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center">
 <img src="crew post ita logo.jpeg" class="logo" alt="Crew Post crew delivery Livorno logo" />
+<span style="color:var(--blue);font-weight:700;font-size:16px">Everything Crew Needs, Delivered in Port</span>
+</div>
 </header>
 
 <section class="hero">
 <h1>Crew Package Delivery for Cruise Crew in Livorno</h1>
-<div class="slogan">Everything Crew Needs, Delivered in Port</div>
+
 <p>
 Crew Post provides a simple and reliable crew delivery service in Livorno for cruise ship crew members. Receive your online orders and personal packages while your ship docks in port.
 </p>
@@ -311,7 +317,7 @@ Crew Post provides a simple and reliable crew delivery service in Livorno for cr
 
 <div class="map">
 <img src="mappa Crew Post.png" alt="Crew shuttle arrival Piazza del Municipio Livorno map" />
-<div class="map-label">📍 Crew Shuttle Stop<br>Piazza del Municipio</div>
+</div>
 <div class="map-badge">⏱ 2 min walk to Crew Post pickup</div>
 </div>
 </section>
@@ -334,7 +340,7 @@ Send:<br><br>
 
 <br>
 
-<a class="cta" href="https://wa.me/393520913319?text=Hello%20Crew%20Post,%0AName:%0ASurname:%0AShip:%0ANationality:">Message Us on WhatsApp</a>
+<a class="cta" href="https://wa.me/393520913319?text=Hello%20Crew%20Post,%0AName:%0ASurname:%0AShip:%0ANationality:">Message Us on WhatsApp and receive your shipping address</a>
 
 </section>
 
@@ -356,9 +362,12 @@ Contact: crewpostdelivery@gmail.com
 
 <div class="mobile-cta">
 <a href="https://wa.me/393520913319?text=Hello%20Crew%20Post,%0AName:%0ASurname:%0AShip:%0ANationality:">
-Message Crew Post on WhatsApp
+Message Us on WhatsApp and receive your shipping address
 </a>
 </div>
+
+</body>
+</html>
 
 </body>
 </html>
