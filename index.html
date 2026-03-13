@@ -156,6 +156,8 @@ footer{background:#0d4ea6;color:white;text-align:center;padding:28px 20px;margin
 
 .whatsapp-float{position:fixed;bottom:20px;right:18px;background:#25D366;color:white;font-size:26px;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,0.25);z-index:1000}
 
+.mobile-break{display:none}
+
 .mobile-cta{
 
 display:none;
@@ -181,6 +183,8 @@ text-decoration:none
 }
 
 @media (max-width:768px){
+.mobile-break{display:block}
+
 header div{gap:6px !important}
 
 .whatsapp-float{display:none}
@@ -216,7 +220,7 @@ section{padding:60px 18px}
 </header>
 
 <section class="hero">
-<h1>Crew Package Delivery for Cruise Crew in Livorno</h1>
+<h1>Package Delivery <br class="mobile-break">for Cruise Crew <br class="mobile-break">in Livorno</h1>
 
 <p>
 Crew Post provides a simple and reliable crew delivery service in Livorno for cruise ship crew members. Receive your online orders and personal packages while your ship docks in port.
@@ -284,6 +288,18 @@ Crew Post provides a simple and reliable crew delivery service in Livorno for cr
 </section>
 
 <section>
+<h2 class="section-title">Crew Shuttle Arrival in Livorno</h2>
+<p class="section-sub">Most cruise ship crew arrive here with the port shuttle.</p>
+
+<div class="map-badge">⏱ 2 min walk to Crew Post pickup</div>
+
+<div class="map">
+<img src="livorno-shuttle-map.png" alt="Crew shuttle arrival Piazza del Municipio Livorno map" />
+</div>
+
+</section>
+
+<section>
 <h2 class="section-title">Companies We Serve in Livorno</h2>
 <p class="section-sub">Crew members from many cruise lines receive their packages with Crew Post.</p>
 
@@ -331,11 +347,6 @@ Crew Post provides a simple and reliable crew delivery service in Livorno for cr
 </div>
 </section>
 
-<section>
-<h2 class="section-title">Crew Shuttle Arrival in Livorno</h2>
-<p class="section-sub">Most cruise ship crew arrive here with the port shuttle.</p>
-
-</div>
 </section>
 
 <section id="whatsapp" class="whatsapp">
